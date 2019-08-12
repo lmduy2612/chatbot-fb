@@ -24,7 +24,6 @@ class ExampleConversation extends Conversation
             ]);
 
         $botman->ask($question, function (Answer $answer) {
-
         });
     }
 
