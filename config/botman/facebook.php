@@ -77,23 +77,34 @@ return [
     'persistent_menu' => [
         [
             'locale' => 'default',
-            'composer_input_disabled' => 'true',
+            'composer_input_disabled' => 'false',
             'call_to_actions' => [
                 [
-                    'title' => 'My Account',
+                    'title' => 'Menu 1',
                     'type' => 'nested',
                     'call_to_actions' => [
                         [
-                            'title' => 'Pay Bill',
+                            'title' => 'Sub Menu 1',
                             'type' => 'postback',
-                            'payload' => 'PAYBILL_PAYLOAD',
+                            'payload' => 'sub_menu_1',
+                        ],
+                    ],
+                ],
+                [
+                    'title' => 'Menu 1',
+                    'type' => 'nested',
+                    'call_to_actions' => [
+                        [
+                            'title' => 'Sub Menu 1',
+                            'type' => 'postback',
+                            'payload' => 'sub_menu_2',
                         ],
                     ],
                 ],
                 [
                     'type' => 'web_url',
-                    'title' => 'Latest News',
-                    'url' => 'http://botman.io',
+                    'title' => 'Menu3',
+                    'url' => 'http://share.zendvn.com',
                     'webview_height_ratio' => 'full',
                 ],
             ],
@@ -109,6 +120,6 @@ return [
     |
     */
     'whitelisted_domains' => [
-        'https://petersfancyapparel.com',
+        'https://duyluong.xyz',
     ],
 ];
